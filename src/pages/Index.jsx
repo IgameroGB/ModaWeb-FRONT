@@ -9,7 +9,6 @@ function Index() {
   `;
 
   const MainContainer = styled.div`
-    background-image: url(./assets/images/textura-pared-vieja-cemento-fondo-rojo-negro-diseno-color-oscuro-abstracto-son-claros-fondo-degradado-blanco.jpg);
     background-image: url("https://img.freepik.com/vector-gratis/textura-marmol-gris_1100-155.jpg");
     /* width: 90%; */
     margin: auto;

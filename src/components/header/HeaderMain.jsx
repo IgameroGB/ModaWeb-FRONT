@@ -6,7 +6,7 @@ import { isHover } from "../../js/utilities";
 
 const HeaderMain = () => {
   const Header = styled.header`
-    background-image: url(./assets/images/textura-pared-vieja-cemento-fondo-rojo-negro-diseno-color-oscuro-abstracto-son-claros-fondo-degradado-blanco.jpg);
+    background-image: url(./assets/images/header-texture.jpg);
     background-position: -2479px -1514px;
     background-size: 2000px;
 
