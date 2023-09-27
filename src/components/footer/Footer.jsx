@@ -20,7 +20,6 @@ const Footer = () => {
   `;
 
   const ImageContainer = styled.div`
-
     height: 85%;
     display: flex;
     align-items: center;
@@ -33,7 +32,15 @@ const Footer = () => {
         <ImageContainer>
           <img
             style={{ height: "100%" }}
-            src="../../assets/images/marco escudo 2.png"
+            // src="../../assets/images/marco escudo 2.png"
+            src="https://i.postimg.cc/0Q8ndfCN/Marco-escudo.png"
+            alt=""
+          />
+
+          <img
+            style={{ height: "100%" }}
+            // src="../../assets/images/marco escudo 2.png"
+            src="https://i.postimg.cc/yYpMJqnN/Marco-escudo-2.png"
             alt=""
           />
         </ImageContainer>
