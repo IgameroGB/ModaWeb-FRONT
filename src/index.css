@@ -4,8 +4,14 @@
 @import "normalize.css";
 
 /*** Font family ***/
+/* Lato */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap");
+/* Raleway */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+/* Play fair */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Great vibes */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*** GENERIC CSS ***/
 /* Variables */
@@ -20,6 +26,8 @@
 
   --main-font-lato: "Lato", sans-serif;
   --main-font-raleway: "Raleway", sans-serif;
+  --main-font-playfair: "Playfair Display", serif;
+  --stylographic-font: "Great Vibes", cursive;
 
   --light-background: #f1f1f1;
 }
@@ -29,7 +37,7 @@ html {
 }
 
 body {
-  font-family: var(--main-font-raleway);
+  font-family: var(--main-font-playfair);
 }
 
 a {
