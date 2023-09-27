@@ -7,6 +7,7 @@ const Footer = () => {
 
     background-color: #d1d1d1;
     background-image: url(../../assets/images/Muro_footer_2.png);
+    background-image: url(https://i.postimg.cc/nLbzjSG6/Muro-footer-2.png);
     background-position: 53% -54px;
     background-size: 60%;
   `;
@@ -39,7 +40,6 @@ const Footer = () => {
 
           <img
             style={{ height: "100%" }}
-            // src="../../assets/images/marco escudo 2.png"
             src="https://i.postimg.cc/yYpMJqnN/Marco-escudo-2.png"
             alt=""
           />
