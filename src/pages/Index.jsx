@@ -5,11 +5,12 @@ import FullScreenImagesSection from "../components/sections/FullScreenImagesSect
 function Index() {
   const Main = styled.div`
     /* background-image: url(./assets/images/textura-pared-vieja-cemento-fondo-rojo-negro-diseno-color-oscuro-abstracto-son-claros-fondo-degradado-blanco.jpg); */
-    background-color: var(--light-red-color);
+    /* background-color: var(--light-red-color); */
   `;
 
   const MainContainer = styled.div`
-    background-image: url("https://img.freepik.com/vector-gratis/textura-marmol-gris_1100-155.jpg");
+    /* background-image: url("https://img.freepik.com/vector-gratis/textura-marmol-gris_1100-155.jpg"); */
+    background-image: url(https://i.postimg.cc/sgXbSky1/header-texture.jpg);
     /* width: 90%; */
     margin: auto;
   `;
@@ -36,19 +37,19 @@ function Index() {
               size: 1 / 3,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-6.jpg?ssl=1",
               height: 600,
-              text: "Bestido Negro"
+              text: "Bestido Negro",
             },
             {
               size: 1 / 3,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-7.jpg?ssl=1",
               height: 600,
-              text: "Bestido Verde"
+              text: "Bestido Verde",
             },
             {
               size: 1 / 3,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-8.jpg?ssl=1",
               height: 600,
-              text: "Bestido Rojo"
+              text: "Bestido Rojo",
             },
           ]}
         />
@@ -61,19 +62,19 @@ function Index() {
               size: 1 / 4,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-6.jpg?ssl=1",
               height: 600,
-              text: "Esto es texto genérico"
+              text: "Esto es texto genérico",
             },
             {
               size: 2 / 4,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-7.jpg?ssl=1",
               height: 600,
-              text: "Esto es una imagen"
+              text: "Esto es una imagen",
             },
             {
               size: 1 / 4,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-6.jpg?ssl=1",
               height: 600,
-              text: "Esto es una imagen"
+              text: "Esto es una imagen",
             },
           ]}
         />
@@ -86,19 +87,19 @@ function Index() {
               size: 1 / 3,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-6.jpg?ssl=1",
               height: 600,
-              text: "Esto es una imagen"
+              text: "Esto es una imagen",
             },
             {
               size: 1 / 3,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-7.jpg?ssl=1",
               height: 600,
-              text: "Esto es una imagen"
+              text: "Esto es una imagen",
             },
             {
               size: 1 / 3,
               src: "https://i0.wp.com/www.modaencalle.com/wp-content/uploads/2015/07/Valentino-roma-7.jpg?ssl=1",
               height: 600,
-              text: "Esto es una imagen"
+              text: "Esto es una imagen",
             },
           ]}
         />
