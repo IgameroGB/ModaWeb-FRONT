@@ -13,11 +13,28 @@ const Image = ({ border, image }) => {
     height: ${image.height}px;
     background-image: url(${image.src});
     background-size: cover;
+
+    display: flex;
+    flex-direction: column-reverse;
+  `;
+
+  const ImageTextContainer = styled.div`
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px 0;
+  `;
+
+  const ImageText = styled.span`
+    padding: 5px 25px;
+    color: var(--gold-color);
   `;
 
   return (
     <ImageContainer>
-      <div>Image text</div>
+      <ImageTextContainer>
+        {image.text != "" && <ImageText>{image.text}</ImageText>}
+      </ImageTextContainer>
     </ImageContainer>
   );
 };
