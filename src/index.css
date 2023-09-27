@@ -1,0 +1,129 @@
+/*** Tailwind - No using ***/
+
+/*** Normalize.css ***/
+@import "normalize.css";
+
+/*** Font family ***/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+
+/*** GENERIC CSS ***/
+/* Variables */
+:root {
+  --white-color: #fff;
+  --gold-color: #fed332;
+  --light-red-color: #d54b4b;
+
+  --dark-font: #303030;
+  --light-font: #979797;
+  --gold-font: #fed332;
+
+  --main-font-lato: "Lato", sans-serif;
+  --main-font-raleway: "Raleway", sans-serif;
+
+  --light-background: #f1f1f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font-raleway);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+/** Container responsivo **/
+.container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 20px;
+  /* background-color: #f0f0f0; */
+  /* Otros estilos de tu contenedor */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+}
+
+/** end container responsivo **/
+
+/** Iconos header **/
+
+.header-ico-group.hover {
+  width: 100%;
+  cursor: pointer;
+  transform: translate(0);
+}
+
+.ico-1 {
+  transform: translate(0px, 20px);
+  width: inherit;
+}
+
+.ico-2 {
+  transform: translate(25px, 0px);
+  width: inherit;
+}
+
+.ico-3 {
+  transform: translate(50px, -20px);
+  width: inherit;
+}
+
+.header-ico-group .text {
+  font-size: 0;
+  opacity: 0;
+  transition: 200ms;
+  padding-left: 10px;
+}
+
+.visible {
+  font-size: 18px !important;
+  opacity: 1 !important;
+  transition: 1000ms;
+}
+
+/** End Iconos header **/
+
+/** Iframe **/
+/* Full screen */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporción 16:9 para un iframe */
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; /* Elimina cualquier borde del iframe si es necesario */
+}
+
+/** End Iframe **/
