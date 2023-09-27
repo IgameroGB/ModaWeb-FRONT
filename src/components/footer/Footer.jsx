@@ -14,7 +14,7 @@ const Footer = () => {
   `;
 
   const Container = styled.div`
-    padding: 30px 10px 0;
+    padding: 30px 10px;
 
     display: flex;
     justify-content: center;
@@ -45,6 +45,11 @@ const Footer = () => {
     font-size: 15px;
   `;
 
+  const ListElem = styled.li`
+  padding: 5px;
+  cursor: pointer;
+  `
+
   const ImageContainer = styled.div`
     width: 20%;
     max-width: 200px;
@@ -63,15 +68,15 @@ const Footer = () => {
           <FooterBlock>
             <BlockTitle>Tienda</BlockTitle>
             <List>
-              <li>Novedades</li>
-              <li>Catálogo</li>
+              <ListElem>Novedades</ListElem>
+              <ListElem>Catálogo</ListElem>
             </List>
           </FooterBlock>
           <FooterBlock>
             <BlockTitle>Sobre nosotros</BlockTitle>
             <List>
-              <li>Pucci di Benisichi</li>
-              <li>¿Quiénes somos?</li>
+              <ListElem>Pucci di Benisichi</ListElem>
+              <ListElem>¿Quiénes somos?</ListElem>
             </List>
           </FooterBlock>
 
@@ -92,20 +97,20 @@ const Footer = () => {
           <FooterBlock>
             <BlockTitle>Ayuda</BlockTitle>
             <List>
-              <li>Politica de ... </li>
-              <li>Politica de ... </li>
-              <li>Politica de ... </li>
-              <li>Contacta con nosotros</li>
+              <ListElem>Politica de ... </ListElem>
+              <ListElem>Politica de ... </ListElem>
+              <ListElem>Politica de ... </ListElem>
+              <ListElem>Contacta con nosotros</ListElem>
             </List>
           </FooterBlock>
           <FooterBlock>
             <BlockTitle>Síguenos</BlockTitle>
             <List>
-              <li>Instragram</li>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Pinterest</li>
-              <li>Youtube</li>
+              <ListElem>Instragram</ListElem>
+              <ListElem>Facebook</ListElem>
+              <ListElem>Twitter</ListElem>
+              <ListElem>Pinterest</ListElem>
+              <ListElem>Youtube</ListElem>
             </List>
           </FooterBlock>
         </Container>

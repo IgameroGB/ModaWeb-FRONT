@@ -22,13 +22,13 @@ function Index() {
   return (
     <Main>
       <MainContainer>
-        <FullScreenVideo
+        {/* <FullScreenVideo
           videoUrl="https://www.youtube.com/embed/ypD6nlc2PCg?si=NXoJJytuobm72Ugx"
           border={`0 0 ${borderWidth}px 0 `}
           borderColor={borderColor}
           title="video 1"
-          width /* Tamaño de la sección */
-        />
+          width 
+        /> */}
         <FullScreenImagesSection
           width={elemScreenWidth} /* Tamaño de la sección */
           border={{ borderWidth, borderColor }}

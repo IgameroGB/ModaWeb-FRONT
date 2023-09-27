@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import Image from "../common/Image";
 
 const FullScreenImagesSection = ({ border, images, width }) => {
-  console.log(width);
   const ImagesContainer = styled.div`
     display: flex;
     margin: auto;
