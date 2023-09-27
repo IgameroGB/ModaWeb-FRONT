@@ -6,16 +6,39 @@ const Footer = () => {
     height: 300px;
 
     background-color: #d1d1d1;
-    background-image: url("../../assets/images/Muro_footer.png");
-    background-image: url("https://i.postimg.cc/vHCsfj5Y/Muro-footer.png");
+    background-image: url(../../assets/images/Muro_footer_2.png);
+    background-position: 53% -54px;
+    background-size: 60%;
+  `;
 
-    background-position-x: center;
+  const Container = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+  `;
+
+  const ImageContainer = styled.div`
+
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   `;
   return (
     <FooterContainer>
-      <div>Footer</div>
-      <div>Footer</div>
-      <div>Footer</div>
+      <Container>
+        <div>Footer</div>
+        <ImageContainer>
+          <img
+            style={{ height: "100%" }}
+            src="../../assets/images/marco escudo 2.png"
+            alt=""
+          />
+        </ImageContainer>
+        <div>Footer</div>
+      </Container>
     </FooterContainer>
   );
 };
