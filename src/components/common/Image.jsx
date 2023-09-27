@@ -10,7 +10,7 @@ const Image = ({ border, image }) => {
       ? border.borderColor.colorCode
       : border.borderColor.colorCode};
 
-    height: ${image.height}px;
+    height: ${image.height}vh;
     background-image: url(${image.src});
     background-size: cover;
 
