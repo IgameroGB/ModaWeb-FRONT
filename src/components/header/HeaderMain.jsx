@@ -7,6 +7,7 @@ import { isHover } from "../../js/utilities";
 const HeaderMain = () => {
   const Header = styled.header`
     background-image: url(./assets/images/header-texture.jpg);
+    background-image: url("https://i.postimg.cc/sgXbSky1/header-texture.jpg");
     background-position: -2479px -1514px;
     background-size: 2000px;
 
