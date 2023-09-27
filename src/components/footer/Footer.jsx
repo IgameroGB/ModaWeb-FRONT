@@ -8,7 +8,7 @@ const Footer = () => {
       </p>
       <p>
         <label>
-          Email <input type="email" name="email" />
+          File <input type="file" name="file" />
         </label>
       </p>
       <p>
