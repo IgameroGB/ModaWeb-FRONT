@@ -6,6 +6,7 @@ import { handleBlur } from "../../js/modals";
 import HeaderMain from "../header/HeaderMain";
 import BackBlur from "../common/BackBlur";
 import Footer from "../footer/Footer";
+import ModalLayout from "../modals/ModalLayout";
 import LanguageModal from "../modals/LanguageModal";
 
 function Layout() {
@@ -52,9 +53,10 @@ function Layout() {
       <Footer />
 
       {modal == "language" && (
-        <LanguageModal
+        <ModalLayout
           modalAnimation={modalAnimation}
           modalClose={modalClose}
+          content={<LanguageModal />}
         />
       )}
       {/* {modal && <BackBlur blurAnimation={blurAnimation} />} */}

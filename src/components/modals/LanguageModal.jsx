@@ -1,20 +1,9 @@
 import styled from "@emotion/styled";
-
-// const ModalContainer = styled.div``;
-
-const Modal = styled.div`
-  width: 80%;
-  max-width: 600px;
-  /* height: 100px; */
-  background: var(--white-color);
-  border-radius: 20px;
-  border-bottom: 3px solid var(--gold-color);
-`;
+import React from "react";
 
 const ModalTitle = styled.div`
   width: 100%;
   border-bottom: 3px solid var(--gold-color);
-
 `;
 
 const ModalBody = styled.div`
@@ -35,24 +24,19 @@ const LangBtn = styled.button`
   margin: 5px 0;
 `;
 
-const LanguageModal = ({ modalAnimation, modalClose }) => {
-  const handleCloseModal = () => {
-    modalClose();
-  };
+const LanguageModal = () => {
   return (
-    <div className="modal-container" onClick={handleCloseModal}>
-      <Modal className={`modal ${modalAnimation ? "animate" : ""}`}>
-        <ModalTitle>
-          <h2>Elige tu idioma</h2>
-        </ModalTitle>
-        <ModalBody>
-          <LangBtn className="active">Español</LangBtn>
-          <LangBtn>Inglés</LangBtn>
-          <LangBtn>Francés</LangBtn>
-          <LangBtn>Italiano</LangBtn>
-        </ModalBody>
-      </Modal>
-    </div>
+    <>
+      <ModalTitle>
+        <h2>Elige tu idioma</h2>
+      </ModalTitle>
+      <ModalBody>
+        <LangBtn className="active">Español</LangBtn>
+        <LangBtn>Inglés</LangBtn>
+        <LangBtn>Francés</LangBtn>
+        <LangBtn>Italiano</LangBtn>
+      </ModalBody>
+    </>
   );
 };
 
