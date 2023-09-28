@@ -11,24 +11,55 @@ import LanguageModal from "../modals/LanguageModal";
 function Layout() {
   const [blur, setBlur] = useState(false);
   const [modal, setModal] = useState("");
+  const [modalAnimation, setModalAnimation] = useState(false);
+  const [blurAnimation, setBlurAnimation] = useState(false);
 
   /* Control modal lenguaje */
   useEffect(() => {
+    // setTimeout(() => {
+    //   handleBlur(setBlur, true);
+    //   setModal("language");
+    //   setModalAnimation(true);
+    // }, 1000);
+  }, []);
+
+  const modalOpen = (modal) => {
+    handleBlur(setBlur, true);
+    setModal(modal);
     setTimeout(() => {
-      handleBlur(setBlur, true);
-      setModal("language");
-    }, 0);
+      setModalAnimation(true);
+      setBlurAnimation(true);
+    }, 1000);
+  };
+
+  const modalClose = () => {
+    setTimeout(() => {
+      setModal("");
+      handleBlur(setBlur, false);
+    }, 400);
+    setBlurAnimation(false);
+    setModalAnimation(false);
+  };
+
+  useEffect(() => {
+    modalOpen("language");
   }, []);
 
   return (
     <>
-      <HeaderMain setBlur={setBlur} />
+      <HeaderMain />
       <Outlet />
       <Footer />
 
-      {modal == "language" && <LanguageModal />}
+      {modal == "language" && (
+        <LanguageModal
+          modalAnimation={modalAnimation}
+          modalClose={modalClose}
+        />
+      )}
+      {/* {modal && <BackBlur blurAnimation={blurAnimation} />} */}
 
-      <BackBlur blur={blur} />
+      {blur && <BackBlur blurAnimation={blurAnimation} />}
     </>
   );
 }

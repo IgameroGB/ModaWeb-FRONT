@@ -30,6 +30,8 @@
   --stylographic-font: "Great Vibes", cursive;
 
   --light-background: #f1f1f1;
+
+  --transition-time-medium: 400ms;
 }
 
 html {
@@ -53,6 +55,15 @@ a {
   padding: 0 20px;
   /* background-color: #f0f0f0; */
   /* Otros estilos de tu contenedor */
+}
+
+.modal h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px 0;
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {
@@ -94,6 +105,12 @@ a {
 .modal {
   /* margin: 0 auto; */
   padding: 20px;
+
+  transition-property: all;
+  transition-duration: var(--transition-time-medium);
+  transition-timing-function: ease-in;
+
+  opacity: 0;
 }
 
 .modal button.active {
@@ -102,9 +119,25 @@ a {
   font-weight: bold;
 }
 
-.transition {
-  opacity: 1 !important;
-  transition: 1000ms ease;
+.blur {
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  backdrop-filter: blur(20px);
+
+  transition-property: all;
+  transition-duration: var(--transition-time-medium);
+  transition-timing-function: ease-in;
+
+  opacity: 0;
+}
+
+.animate {
+  opacity: 1;
 }
 
 /** end Modal **/

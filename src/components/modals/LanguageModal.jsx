@@ -14,11 +14,7 @@ const Modal = styled.div`
 const ModalTitle = styled.div`
   width: 100%;
   border-bottom: 3px solid var(--gold-color);
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
 
-  padding: 5px 0;
 `;
 
 const ModalBody = styled.div`
@@ -39,12 +35,15 @@ const LangBtn = styled.button`
   margin: 5px 0;
 `;
 
-const LanguageModal = () => {
+const LanguageModal = ({ modalAnimation, modalClose }) => {
+  const handleCloseModal = () => {
+    modalClose();
+  };
   return (
-    <div className="modal-container">
-      <Modal className="modal">
+    <div className="modal-container" onClick={handleCloseModal}>
+      <Modal className={`modal ${modalAnimation ? "animate" : ""}`}>
         <ModalTitle>
-          <span>Elige tu idioma</span>
+          <h2>Elige tu idioma</h2>
         </ModalTitle>
         <ModalBody>
           <LangBtn className="active">Español</LangBtn>
